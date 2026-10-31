@@ -1,20 +1,20 @@
-<<<<<<< HEAD
-# React + Vite
+# SuratKita
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Website layanan surat kelurahan/desa dengan tracking status yang transparan,
+dibuat untuk Web In Action MIA 2026 (subtema Public Service Tracking).
 
-Currently, two official plugins are available:
+## Tech stack
+React, Vite, Tailwind CSS, React Router
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Cara menjalankan
+git clone https://github.com/USERNAME/suratkita.git
+cd suratkita
+npm install
+npm run dev
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# suratKita
->>>>>>> 7164b1b9eb2b013520f3022da4f4692652b06266
+## Progress saat ini
+- [x] Landing page
+- [x] Halaman tracking tiket (data dummy, coba nomor SK-2026-0142)
+- [ ] Form pengajuan surat
+- [ ] Login dan panel petugas
+- [ ] Dashboard statistik publik
