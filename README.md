@@ -8,8 +8,11 @@ React, Vite, Tailwind CSS, React Router
 
 ## Cara menjalankan
 git clone https://github.com/USERNAME/suratkita.git
+
 cd suratkita
+
 npm install
+
 npm run dev
 
 ## Progress saat ini
