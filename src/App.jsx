@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Landing from './pages/Landing'
 import Tracking from './pages/Tracking'
+import PanelPetugas from './pages/PanelPetugas'
 import AjukanSurat from './pages/AjukanSurat'
 
 function ScrollKeAtas() {
@@ -34,6 +35,7 @@ function IsiAplikasi() {
         <Route path="/dashboard" element={<Landing />} />
         <Route path="/ajukan-surat" element={<AjukanSurat />} />
         <Route path="/tiket/:id" element={<Tracking />} />
+        <Route path="/petugas" element={<PanelPetugas />} />
         </Routes>
       </div>
     </>

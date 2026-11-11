@@ -7,6 +7,18 @@ export default function Navbar() {
   const { pathname } = useLocation()
   const diBeranda = pathname === '/' || pathname === '/dashboard'
   const awalanAnchor = pathname === '/dashboard' ? '/dashboard' : '/'
+  const [info, setInfo] = useState('')
+  const timer = useRef(null)
+
+  useEffect(() => () => clearTimeout(timer.current), [])
+
+  if (pathname.startsWith('/petugas')) return null
+
+  const segera = (pesan) => {
+    setInfo(pesan)
+    clearTimeout(timer.current)
+    timer.current = setTimeout(() => setInfo(''), 3200)
+  }
 
   return (
     <>
