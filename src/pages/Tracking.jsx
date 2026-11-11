@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
-import { tickets } from '../data/tickets'
+import { cariTiket } from '../data/ticketStorage'
 import { IconCheck, IconSearchOff } from '../components/Icons'
 
 function CariTiket({ awal }) {
@@ -107,7 +107,7 @@ function Timeline({ steps }) {
 
 export default function Tracking() {
   const { id } = useParams()
-  const t = tickets[id]
+  const t = cariTiket(id)
 
   const bagian = 'border-t border-line p-6 md:p-8'
 

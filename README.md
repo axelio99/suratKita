@@ -4,7 +4,7 @@ Website layanan surat kelurahan/desa dengan tracking status yang transparan,
 dibuat untuk Web In Action MIA 2026 (subtema Public Service Tracking).
 
 ## Tech Stack yang digunakan
-React, Vite, Tailwind CSS, React Router
+Node.js, React, Vite, Tailwind CSS, React Router
 
 ## Cara Menjalankan
 ```bash
