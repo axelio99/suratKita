@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Landing from './pages/Landing'
 import Tracking from './pages/Tracking'
+import AjukanSurat from './pages/AjukanSurat'
 
 function ScrollKeAtas() {
   const location = useLocation()
@@ -20,15 +21,29 @@ function ScrollKeAtas() {
   return null
 }
 
+function IsiAplikasi() {
+  const location = useLocation()
+
+  return (
+    <>
+      <ScrollKeAtas />
+      <Navbar />
+      <div key={location.pathname} className="page-enter">
+        <Routes location={location}>
+        <Route path="/" element={<Landing />} />
+        <Route path="/dashboard" element={<Landing />} />
+        <Route path="/ajukan-surat" element={<AjukanSurat />} />
+        <Route path="/tiket/:id" element={<Tracking />} />
+        </Routes>
+      </div>
+    </>
+  )
+}
+
 export default function App() {
   return (
     <BrowserRouter>
-      <ScrollKeAtas />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/tiket/:id" element={<Tracking />} />
-      </Routes>
+      <IsiAplikasi />
     </BrowserRouter>
   )
 }
