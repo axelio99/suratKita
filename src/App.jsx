@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Landing from './pages/Landing'
 import Tracking from './pages/Tracking'
+import PanelPetugas from './pages/PanelPetugas'
 
 function ScrollKeAtas() {
   const location = useLocation()
@@ -28,6 +29,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/tiket/:id" element={<Tracking />} />
+        <Route path="/petugas" element={<PanelPetugas />} />
       </Routes>
     </BrowserRouter>
   )

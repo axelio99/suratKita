@@ -12,6 +12,8 @@ export default function Navbar() {
 
   useEffect(() => () => clearTimeout(timer.current), [])
 
+  if (pathname.startsWith('/petugas')) return null
+
   const segera = (pesan) => {
     setInfo(pesan)
     clearTimeout(timer.current)
